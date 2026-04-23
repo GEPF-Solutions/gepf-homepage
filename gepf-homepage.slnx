@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="gepf-homepage/gepf-homepage.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
