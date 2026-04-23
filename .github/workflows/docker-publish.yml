@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/gepf-homepage
+  IMAGE_NAME: gepf-solutions/gepf-homepage
 
 jobs:
   build-and-push:
