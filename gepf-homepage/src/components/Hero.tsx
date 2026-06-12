@@ -1,3 +1,5 @@
+import GithubBar from './GithubBar'
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -12,6 +14,7 @@ export default function Hero() {
         <br />
         Based in Vorarlberg — the bit of Austria closest to Switzerland, not that it matters.
       </p>
+      <GithubBar />
       <div className="badge-float">please hire us ✦</div>
     </section>
   )
