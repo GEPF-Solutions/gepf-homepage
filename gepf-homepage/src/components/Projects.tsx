@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     name: 'Highland Games Webapp',
     desc: 'Live scoring and matchup platform for the Pro Western Highland Games in Höchst, Austria. Spectators follow scores and fixtures in real time across all disciplines; organizers enter results and manage matchups through a protected admin panel.',
-    status: 'wip',
+    status: 'live',
     tags: ['React', 'C#'],
     link: 'https://highland-games.gepf.at',
     category: 'Open Source',

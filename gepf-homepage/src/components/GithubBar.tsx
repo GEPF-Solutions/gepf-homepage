@@ -15,8 +15,8 @@ function GithubIcon() {
 
 export default function GithubBar() {
   return (
-    <div className="github-bar">
-      <p className="github-label">↳ find us on GitHub</p>
+    <div className="github-float">
+      <span className="github-note">find us on GitHub →</span>
       <a href="https://github.com/GEPF-Solutions" className="chip" target="_blank" rel="noreferrer">
         <GithubIcon />
         @gepf ↗
