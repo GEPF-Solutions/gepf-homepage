@@ -28,6 +28,14 @@ const projects: Project[] = [
     github: 'https://github.com/GEPF-Solutions/HighlandGames',
   },
   {
+    name: 'UniFi + Entra Portal',
+    desc: 'Self-hosted captive portal that gates UniFi WiFi behind Microsoft Entra ID sign-in. Built for a volunteer fire department: members log in with their Microsoft account (MFA and Conditional Access included), no app or certificates needed. A background job re-checks group membership and kicks anyone who has left.',
+    status: 'wip',
+    tags: ['React', 'C#'],
+    category: 'Open Source',
+    github: 'https://github.com/GEPF-Solutions/Unifi-Entra-Portal',
+  },
+  {
     name: 'GEPF Website',
     desc: 'This website. Built it ourselves, obviously. It shows.',
     status: 'live',
