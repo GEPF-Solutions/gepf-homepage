@@ -144,7 +144,7 @@ nav {
 
 @keyframes spin-slow { to { transform: translateY(-50%) rotate(372deg); } }
 
-@media (max-width: 700px) { .badge-float { display: none; } }
+@media (max-width: 700px) { .badge-float, .github-float { display: none; } }
 
 /* MARQUEE */
 .divider {
@@ -182,19 +182,18 @@ nav {
 }
 
 /* GITHUB BAR */
-.github-bar {
-  padding: 2.5rem 2rem;
-  border-top: 1px solid #2a2636;
+.github-float {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.github-label {
+.github-note {
   font-family: 'Architects Daughter', cursive;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--pink);
 }
 
