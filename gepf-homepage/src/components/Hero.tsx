@@ -10,7 +10,7 @@ export default function Hero() {
         <span className="line2">Pfanner</span>
       </h1>
       <p className="hero-subtitle">
-        Two devs from Vorarlberg building <strong>stuff</strong> — whether anyone needs it is a separate question.
+        Two devs from Vorarlberg building <strong>stuff</strong>.
         <br />
         Based in Vorarlberg — the bit of Austria closest to Switzerland, not that it matters.
       </p>
