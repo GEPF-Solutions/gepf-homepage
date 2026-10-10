@@ -1,8 +1,11 @@
 import GithubBar from './GithubBar'
+import HireBadge from './HireBadge'
 
 export default function Hero() {
   return (
     <section className="hero">
+      {/* Only shown when the visitor's system is in light mode (see index.css). */}
+      <p className="light-note">light mode detected. we don't do that here.</p>
       <p className="hero-eyebrow">↳ we have day jobs. this is the other stuff.</p>
       <h1 className="hero-title">
         Gehrer
@@ -11,11 +14,9 @@ export default function Hero() {
       </h1>
       <p className="hero-subtitle">
         Two devs from Vorarlberg building <strong>stuff</strong>.
-        <br />
-        Based in Vorarlberg — the bit of Austria closest to Switzerland, not that it matters.
       </p>
       <GithubBar />
-      <div className="badge-float">please hire us ✦</div>
+      <HireBadge />
     </section>
   )
 }

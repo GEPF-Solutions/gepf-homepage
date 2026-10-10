@@ -25,7 +25,7 @@ function Track({ hidden }: { hidden?: boolean }) {
 
 export default function Marquee() {
   return (
-    <div className="divider" aria-hidden="true">
+    <div className="divider" aria-hidden="true" data-nosnippet>
       <Track />
       <Track hidden />
     </div>

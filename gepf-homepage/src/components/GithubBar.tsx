@@ -1,3 +1,5 @@
+import ExternalArrow from './ExternalArrow'
+
 function GithubIcon() {
   return (
     <svg
@@ -19,7 +21,7 @@ export default function GithubBar() {
       <span className="github-note">find us on GitHub →</span>
       <a href="https://github.com/GEPF-Solutions" className="chip" target="_blank" rel="noreferrer">
         <GithubIcon />
-        @gepf ↗
+        @gepf <ExternalArrow />
       </a>
     </div>
   )

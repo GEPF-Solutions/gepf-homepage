@@ -6,8 +6,11 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import NotFound from './components/NotFound'
+import useComeBackTitle from './useComeBackTitle'
 
 export default function App() {
+  useComeBackTitle()
+
   if (window.location.pathname !== '/') return <NotFound />
 
   return (
