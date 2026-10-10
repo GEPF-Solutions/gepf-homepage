@@ -1,3 +1,5 @@
+import ExternalArrow from './ExternalArrow'
+
 type Project = {
   name: string
   desc: string
@@ -28,9 +30,17 @@ const projects: Project[] = [
     github: 'https://github.com/GEPF-Solutions/HighlandGames',
   },
   {
+    name: 'KNX-MQTT Bridge',
+    desc: 'Bidirectional bridge between KNX and MQTT via a Gira X1 gateway. Imports group addresses straight from an ETS export with automatic datapoint-type detection, so Home Assistant, Node-RED and friends can read and switch the KNX bus. Comes with a web UI and runs our own home automation.',
+    status: 'live',
+    tags: ['React', 'C#'],
+    category: 'Open Source',
+    github: 'https://github.com/GEPF-Solutions/KnxMqttBridge',
+  },
+  {
     name: 'UniFi + Entra Portal',
     desc: 'Self-hosted captive portal that gates UniFi WiFi behind Microsoft Entra ID sign-in. Built for a volunteer fire department: members log in with their Microsoft account (MFA and Conditional Access included), no app or certificates needed. A background job re-checks group membership and kicks anyone who has left.',
-    status: 'wip',
+    status: 'live',
     tags: ['React', 'C#'],
     category: 'Open Source',
     github: 'https://github.com/GEPF-Solutions/Unifi-Entra-Portal',
@@ -40,7 +50,7 @@ const projects: Project[] = [
     desc: 'This website. Built it ourselves, obviously. It shows.',
     status: 'live',
     tags: ['React'],
-    github: 'https://github.com/GEPF-Solutions',
+    github: 'https://github.com/GEPF-Solutions/gepf-homepage',
     category: 'Open Source',
   },
 ]
@@ -64,7 +74,7 @@ function ProjectCard({ project }: { project: Project }) {
           <div className="project-card-header">
             {project.link && project.category !== 'Commercial' ? (
               <a href={project.link} className="project-name-link" target="_blank" rel="noreferrer">
-                {project.name} ↗
+                {project.name} <ExternalArrow />
               </a>
             ) : (
               <p className="project-name">{project.name}</p>
@@ -99,7 +109,9 @@ function ProjectCard({ project }: { project: Project }) {
 
 export default function Projects() {
   return (
-    <section className="projects">
+    // data-nosnippet: Google kept using a project description as the search result
+    // snippet instead of the meta description in index.html.
+    <section className="projects" data-nosnippet>
       <div className="section-head">
         <h2 className="section-title">Projects</h2>
         <span className="section-note">← stuff we made</span>
